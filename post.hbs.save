@@ -45,14 +45,17 @@ into the {body} of the default.hbs template --}}
 
             </footer>
 
-
+            {{!--
             <section class="post-full-comments">
-
-<div id="commento"></div>
-<script src="https://commento.magnier.io/js/commento.js"></script>
-
+                If you want to embed comments, this is a good place to do it!
             </section>
-
+            --}}
+<section class="post-full-comments">
+                {{!-- Isso (hardcoded) --}}
+                <script data-isso="https://isso.magnier.io/" data-isso-gravatar="true" data-isso-avatar="false"
+                    src="https://isso.magnier.io/js/embed.min.js"></script>
+                <section id="isso-thread"></section>
+            </section>
 
         </article>
 
