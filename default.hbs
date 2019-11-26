@@ -29,13 +29,8 @@
         {{!-- The footer at the very bottom of the screen --}}
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="{{@site.url}}"><img src="/assets/redash-logo.svg" alt="{{@site.title}}" width="73" height="40" /></a> &copy; {{date format="YYYY"}}</section>
+                <section class="copyright"><a href="{{@site.url}}"><img src="/assets/favicon.png" alt="{{@site.title}}" width="40" height="40" /></a></section>
                 <nav class="site-footer-nav">
-                    <a href="{{@site.url}}">Latest Posts</a>
-                    {{!-- #if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if--}}
-                    <a href="https://github.com/getredash/redash" target="_blank" rel="noopener">Github</a>
-                    {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
-                    {{!-- <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a> --}}
                 </nav>
             </div>
         </footer>
@@ -70,11 +65,7 @@
 
 
     {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
+    <script src="{{asset "built/jquery-3.4.1.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
 
     {{#if pagination.pages}}
