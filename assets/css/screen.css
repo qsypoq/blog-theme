@@ -710,7 +710,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-meta-date {
-    color: var(--blue);
+    color: #27ae60;
 }
 
 .post-full-title {
@@ -851,12 +851,12 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content a {
     color: #27ae60;
     word-break: break-word;
-    box-shadow: #27ae60;
+    text-decoration: none;
 }
 
 .post-full-content a:hover {
-    color: #4ea245;
-    text-decoration: none;
+    box-shadow: #27ae60 0 -1px 0 inset;
+
 }
 
 .post-full-content strong,
@@ -2277,7 +2277,6 @@ Usage (In Ghost editor):
 
 .site-footer-nav a {
     position: relative;
-    margin-left: 20px;
     color: #000;
 }
 
