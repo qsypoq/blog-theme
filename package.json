@@ -1,5 +1,5 @@
 {
-    "name": "magnier-blog",
+    "name": "myLab",
     "description": "magnier.io theme based on redash one",
     "version": "1.0.0",
     "engines": {
@@ -13,9 +13,9 @@
         "test": "gscan ."
     },
     "author": {
-        "name": "Redash",
-        "email": "support@getredash.com",
-        "url": "https://redash.io"
+        "name": "Adam Qsypoq Magnier",
+        "email": "adam@magnier.io",
+        "url": "https://magnier.io"
     },
     "gpm": {
         "type": "theme",
@@ -31,10 +31,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/getredash/blog-theme.git"
+        "url": "https://github.com/qsypoq/blog-theme.git"
     },
-    "bugs": "https://github.com/getredash/blog-theme/issues",
-    "contributors": "https://github.com/getredash/blog-theme/graphs/contributors",
+    "bugs": "https://github.com/qsypoq/blog-theme/issues",
+    "contributors": "https://github.com/qsypoq/blog-theme/graphs/contributors",
     "devDependencies": {
         "autoprefixer": "6.3.6",
         "beeper": "^1.1.1",
