@@ -876,7 +876,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content img,
 .post-full-content video {
     display: block;
-    margin: 1.5em auto;
+    margin: 1em auto;
     max-width: 1040px;
     height: auto;
 }
@@ -1891,7 +1891,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content figure {
-    margin: 0em 0 2em;
+    margin: 1.5em 0 1.5em;
 }
 
 .post-full-content figure img {
