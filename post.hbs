@@ -132,9 +132,21 @@ into the {body} of the default.hbs template --}}
 {{/post}}
 
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js" integrity="sha256-NFZVyNmS1YlmiklazBA+TALYJlJtZj/y/i/oADk6CVE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-markup-templating.min.js" integrity="sha256-41PtHfb57czcvRtAYtUhYcSaLDZ3ahSDmVZarE0uWPo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-javascript.min.js" integrity="sha256-KxieZ8/m0L2wDwOE1+F76U3TMFw4wc55EzHvzTC6Ej8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-css.min.js" integrity="sha256-49Y45o2obU1Yv4zkYDpMDyAa+D9sgKNbNy4ZYGRl/ls=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-php.min.js" integrity="sha256-gJj4RKQeXyXlVFu2I8jQACQZsii/YzVMhcDT99lr45I=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-sql.min.js" integrity="sha256-zgHnuWPEbzVKrT72LUtMObJgbwkv0VESwRfz7jpdsq0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-yaml.min.js" integrity="sha256-JoqiKM2GipZjbGjNyl62d6qjQY1F9QTLriWOe4N76wE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-json.min.js" integrity="sha256-18m89UBQcWGjPHHo64UD+sQx4SpMxiRI1F0MbefKXWw=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-bash.min.js" integrity="sha256-0W9ddRPtgrjvZVUxGhU/ShLxFi3WGNV2T7A7bBTuDWo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-python.min.js" integrity="sha256-zXSwQE9cCZ8HHjjOoy6sDGyl5/3i2VFAxU8XxJWfhC0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-powershell.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-html.min.js" crossorigin="anonymous"></script>
 {{#contentFor "scripts"}}
-<script>
 
+<script>
 // NOTE: Scroll performance is poor in Safari
 // - this appears to be due to the events firing much more slowly in Safari.
 //   Dropping the scroll event and using only a raf loop results in smoother
